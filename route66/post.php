@@ -38,6 +38,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 
     <a href="social.php" class="back-btn">Back to Meetups</a>
-</main>
+
 
 <?php include("footer.php"); ?>

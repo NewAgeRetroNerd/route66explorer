@@ -23,7 +23,7 @@ $result = $conn->query($sql);
         <form method="GET" class="filter-form">
             <div class="form-group">
                 <label for="city">City:</label>
-                <select name="city">
+                <select id="city">
                     <option value="">All</option>
                     <option value="Chicago, IL" <?= $city == "Chicago, IL" ? "selected" : "" ?>>Chicago, IL</option>
                     <option value="Springfield, IL" <?= $city == "Springfield, IL" ? "selected" : "" ?>>Springfield, IL</option>
@@ -49,7 +49,7 @@ $result = $conn->query($sql);
 
             <div class="form-group">
                 <label for="event_type">Event Type:</label>
-                <select name="event_type">
+                <select id="event_type">
                     <option value="">All</option>
                     <option value="Eating" <?= $event_type == "Eating" ? "selected" : "" ?>>Eating</option>
                     <option value="Drinking" <?= $event_type == "Drinking" ? "selected" : "" ?>>Drinking</option>
@@ -61,7 +61,7 @@ $result = $conn->query($sql);
 
             <div class="form-group">
                 <label for="time_filter">Time:</label>
-                <select name="time_filter">
+                <select id="time_filter">
                     <option value="">All</option>
                     <option value="upcoming" <?= $time_filter == "upcoming" ? "selected" : "" ?>>Upcoming</option>
                     <option value="past" <?= $time_filter == "past" ? "selected" : "" ?>>Past</option>
@@ -98,6 +98,5 @@ $result = $conn->query($sql);
     </section>
 
     <a href="create_post.php" class="post-btn">Create a Meetup</a>
-</main>
 
 <?php include("footer.php"); ?>

@@ -25,4 +25,3 @@
         <p>Browse through the major cities along Route 66 and discover exciting attractions, upcoming events, and travel tips for your next road trip!</p>
         <a href="cities.php" class="explore-btn">Explore Cities</a>
     </section>
-</main>

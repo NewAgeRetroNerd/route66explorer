@@ -24,7 +24,6 @@ include("navigation.php");
         <h3>Top Attractions</h3>
         <div class="data-box" id="attractions-info">Loading attractions...</div>
     </section>
-</main>
 
 <script src="js/weather.js"></script>
 <script src="js/events.js"></script>
@@ -34,7 +33,7 @@ include("navigation.php");
     getEvents("Needles");
     getAttractions("Needles");
 </script>
-
+    
 <?php
 include("footer.php");
 ?>
