@@ -1,0 +1,623 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffedd5;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* Navigation Styles */
+nav {
+    background: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #ff6600;
+}
+
+/* Footer Styles */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Home Page Styling */
+.hero-section {
+    text-align: center;
+    padding: 30px;
+    background: #ff6600;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.home-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* History and Highlights Sections */
+.history-section, .highlights-section, .explore-section {
+    background: #ffedd5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h3, .highlights-section h3, .explore-section h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Highlights List */
+.highlights-list {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights-list li {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Explore Button */
+.explore-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background: #cc5500;
+}
+
+/* Cities List Styling */
+.route66-cities {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.route66-cities li {
+    margin: 15px;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.city-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.city-box:hover {
+    transform: scale(1.05);
+}
+
+/* Filter Form Styling */
+.filter-section {
+    background: #ffedd5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-btn:hover {
+    background: #cc5500;
+}
+
+/* Meetup Cards */
+.meetup-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meetup-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.meetup-header {
+    background: #ff6600;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.meetup-body {
+    padding: 15px;
+}
+
+.meetup-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.meetup-footer .btn {
+    display: inline-block;
+    background: #444;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.meetup-footer .btn:hover {
+    background: #222;
+}
+
+/* No Results Styling */
+.no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #888;
+}
+/* Form Styling */
+.form-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-form label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.create-form select,
+.create-form input,
+.create-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-form select:focus,
+.create-form input:focus,
+.create-form textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.create-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.create-form button {
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.create-form button:hover {
+    background-color: #e55a00;
+}
+
+/* Textarea Styling */
+.create-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+}
+
+/* Create Post Button */
+.post-btn {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.post-btn:hover {
+    background: #cc5500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+    }
+    .meetup-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* City Header Styling */
+.city-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-header h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.city-img {
+    width: 500px;
+    height: auto;
+}
+
+.city-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.city-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .route66-cities {
+        flex-direction: column;
+    }
+    .route66-cities li {
+        flex: 1 1 100%;
+    }
+    .home-img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/* Post Container Styling */
+.post-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.post-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+    font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #218838;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-form label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.create-form select,
+.create-form input,
+.create-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-form select:focus,
+.create-form input:focus,
+.create-form textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.create-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.create-form button {
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.create-form button:hover {
+    background-color: #e55a00;
+}
+
+/* Textarea Styling */
+.create-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+}
+/* Auth Form Success & Error Messages */
+.form-error {
+    color: #d93025;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form-success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.form-error {
+    color: red;
+    font-weight: bold;
+}
+
+.form-success {
+    color: green;
+    font-weight: bold;
+}
+
+#password-rules {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#password-rules li {
+    font-weight: bold;
+    margin-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.valid {
+    color: green !important;
+}
+
+.invalid {
+    color: red !important;
+}
